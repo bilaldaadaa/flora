@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.section-mt {
+  margin-top: 100px;
+}
+.main-title {
+  margin-bottom: 56px;
+}
+.main-title h2 {
+  font-size: 39px;
+  font-weight: 700;
+  color: #222;
+}
+.main-title p {
+  font-size: 15px;
+  color: #222;
+  opacity: 0.5;
+  margin-top: 6px;
+  line-height: 22px;
+}
+.container {
+  padding: 0 5.124vw;
+}
+button,
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn {
+  width: 135px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.btn-primary {
+  background-color: #025595;
+  color: #f5f5f5;
+}
+header nav .aside-icon {
+  display: none;
+}
+/* =============================== Header =============================== */
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #eff8ff;
+  position: relative;
+  overflow: hidden;
+}
+header nav {
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  background-color: #eff8ff;
+  z-index: 1000;
+}
+header nav .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header nav .nav-links a {
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+}
+header .hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+header .hero .hero-content h1 {
+  max-width: 549px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+header .hero .hero-content p {
+  max-width: 423px;
+  font-size: 16px;
+  opacity: 0.5;
+  line-height: 26px;
+}
+header .hero .hero-img {
+  width: 60%;
+  max-width: 1000px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+header .hero .hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .hero form {
+  max-width: 866px;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+  background-color: #ffffffe5;
+  border-radius: 16px;
+}
+header .hero form .input-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header .hero form .input-container input {
+  margin-top: 10px;
+  display: block;
+}
+header .hero form .input-container label {
+  font-size: 16px;
+  font-weight: 500;
+}
+header .hero form .input-container .input-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #eff8ff;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ================================ How-It-Work ============================= */
+.how-it-work .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.how-it-work .cards .card {
+  max-width: 380px;
+  border-radius: 15px;
+  padding: 30px 40px;
+}
+.how-it-work .cards .card.active {
+  background-color: #025595;
+  color: #fff;
+}
+.how-it-work .cards .card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.how-it-work .cards .card p {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+  line-height: 24px;
+  margin-top: 10px;
+}
+/* ================================ Find Dream Home ========================= */
+.Find_Home .main-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.Find_Home .content {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.Find_Home .content .image {
+  width: 86%;
+  height: 380px;
+}
+.Find_Home .content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.Find_Home .content .details {
+  max-width: 340px;
+  height: 312px;
+  border-radius: 10px;
+  background-color: #ffffffe5;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.Find_Home .details .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Find_Home .details .icons div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.Find_Home .details h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.Find_Home .details span {
+  font-size: 16px;
+}
+.Find_Home .details .location {
+  font-size: 14px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-top: 86px;
+}
+.Find_Home .details .location img {
+  width: 24px;
+  height: 24px;
+}
+/* ============================= Most Trending =========================== */
+.Trending .cards {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 25px;
+}
+.Trending .cards .card {
+  max-width: 382px;
+  padding: 20px;
+  background-color: #dddddd31;
+  border-radius: 10px;
+}
+.Trending .cards .card img {
+  border-radius: 6px;
+}
+.Trending .cards .card img:first-child {
+  width: 100%;
+}
+.Trending .cards .card .price {
+  color: #025595;
+  font-weight: 600;
+  margin-top: 16px;
+  display: block;
+  line-height: 28px;
+}
+.Trending .cards .card h3 {
+  max-width: 180px;
+  color: #222;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+}
+.Trending .cards .card .location {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  font-size: 14px;
+  gap: 10px;
+}
+.Trending .cards .card .location img {
+  width: 24px;
+  height: 24px;
+}
+/* ============================== the Best ============================= */
+.theBest .options {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 40px;
+  overflow-x: scroll;
+}
+.theBest .options::-webkit-scrollbar {
+  display: none;
+}
+.theBest .options li {
+  padding-bottom: 12px;
+  flex-shrink: 0;
+}
+.theBest .options li:nth-child(1) {
+  border-bottom: 1px solid #025595;
+  color: #025595;
+  font-weight: 600;
+}
+.theBest .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.theBest .cards .card {
+  max-width: 387px;
+  position: relative;
+}
+.theBest .cards .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.theBest .cards .card .img-btn {
+  display: flex;
+  gap: 7px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+.theBest .cards .card .img-btn span {
+  border: 1px solid #fff;
+  background-color: #0000006c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 6px 13px;
+  cursor: pointer;
+}
+.theBest .cards .card .img-btn span:nth-child(2) {
+  padding: 6px;
+}
+/* ================================ Footer ================================ */
+footer .content {
+  display: flex;
+  gap: 60px;
+  padding-block: 35px;
+  border-bottom: 1px solid #22222238;
+  flex-wrap: wrap;
+}
+footer .container .col-1 {
+  max-width: 351px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+footer .container .col-1 p {
+  font-size: 16px;
+  color: #222;
+  opacity: 0.5;
+  line-height: 26px;
+}
+footer .container .col h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+footer .container .col ul {
+  font-size: 16px;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .container .col .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+footer .container .col .social-icons div {
+  background-color: #025595;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+footer .content2 {
+  padding-block: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 24px;
+}
+footer .content2 a,
+footer .content2 p {
+  font-size: 14px;
+  color: #222;
+}
+footer .content2 .links {
+  display: flex;
+  gap: 30px;
+}
+
+/* =================================== Responsive Design ===================================== */
+@media (max-width: 992px) {
+  header nav .nav-links,
+  header nav .btn {
+    display: none;
+  }
+  header nav .aside-icon {
+    display: block;
+  }
+  header .hero .container {
+    width: 100%;
+  }
+  header .hero form {
+    max-width: 100%;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 0;
+    margin-top: 35px;
+    padding: 20px;
+    row-gap: 24px;
+  }
+  header .hero .hero-content h1 {
+    font-size: 47px;
+    line-height: 46px;
+  }
+  header .hero .hero-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  header .hero .hero-content .text {
+    padding: 0 5vw;
+  }
+  header .hero .container {
+    padding: 0;
+  }
+  header .hero .hero-img {
+    width: 100%;
+    height: 43vh;
+  }
+  .how-it-work .cards,
+  .Trending .cards,
+  .theBest .cards {
+    justify-content: center;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-mt {
+    margin-top: 64px;
+  }
+  .main-title {
+    margin-bottom: 42px;
+  }
+  .main-title h2 {
+    font-size: 30px;
+  }
+  header .hero .hero-content h1 {
+    font-size: 35px;
+  }
+  header nav .logo img {
+    width: 45px;
+  }
+  .Find_Home {
+    margin-bottom: 200px;
+  }
+  .Find_Home .container {
+    padding: 0;
+  }
+  .Find_Home .main-title {
+    padding: 0 5vw;
+  }
+  .Find_Home .content .image {
+    width: 100%;
+  }
+  .Find_Home .content img {
+    border-radius: 0px;
+  }
+  .Find_Home .btn {
+    display: none;
+  }
+  .Find_Home .content .details {
+    max-width: 100%;
+    width: 100%;
+    top: auto;
+    transform: translate(0);
+    bottom: -35%;
+  }
+  .Trending .cards .card {
+    padding: 16px;
+    border-radius: 6px;
+  }
+  .Trending .cards .card h3 {
+    max-width: 100%;
+    font-size: 16px;
+  }
+}
